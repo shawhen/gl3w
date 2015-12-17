@@ -4,7 +4,7 @@ project(gl3w)
 
 include_directories(include)
 
-add_library(gl3w src/gl3w.c)
+add_library(gl3w SHARED src/gl3w.c)
 
 if (UNIX)
   target_link_libraries(gl3w dl)
